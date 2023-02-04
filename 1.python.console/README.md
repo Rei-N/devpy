@@ -109,6 +109,23 @@ if __name__ == '__main__':
 На ипотеку было потрачено: 360000 рублей
 Было накоплено: 240000 рублей
 ```
+Ответ:
+```
+if __name__ == '__main__':
+    print("Введите заработную плату в месяц:", end=' ')
+    salary = float(input())
+    print("Введите, какой процент(%) уходит на ипотеку:", end=' ')
+    mortgage_percent = float(input())
+    print("Введите, какой процент(%) уходит на жизнь:", end=' ')
+    life_percent = float(input())
+    print("")
+    print("Вывод:")
+    if (salary >=0 ):
+        print ("На ипотеку было потрачено:", 12*salary*(mortgage_percent/100))
+        print("Было накоплено: ", 12*salary*(100 - mortgage_percent - life_percent)/100)
+    else:
+        print("Невозможное значение")
+```
 
 ---
 Инструкция по выполнению домашнего задания:
